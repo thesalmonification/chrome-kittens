@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Kitten Images",
+    "version": "1.0",
+    "description": "Replaces all images on a website with kittens.",
+    "icons": {
+       "48": "icon.png"
+    },
+    "content_scripts": [
+       {
+         "matches": ["<all_urls>"],
+         "js": ["kitten-images.js"]
+       }
+    ],
+    "permissions": ["activeTab"]
+   }
